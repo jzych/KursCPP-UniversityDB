@@ -7,7 +7,7 @@ Post-work for Lesson 2 is to create simple database for storing students data (N
   - [ ] main function
   - [ ] class structure
   - [ ] Database record structure
-- [ ] main loop (user interface and dummy functions calls)
+- [ ] Main loop (user interface and dummy functions calls)
 - [ ] DB: generic functions to handle database's records:
   - [ ] list init (stl vector of pointers)
   - [ ] add element to list

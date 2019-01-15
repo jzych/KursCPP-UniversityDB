@@ -1,5 +1,6 @@
 # KursCPP-UniversityDB
 [![Build Status](https://travis-ci.org/jzych/KursCPP-UniversityDB.svg?branch=master)](https://travis-ci.org/jzych/KursCPP-UniversityDB)
+
 Post-work for Lesson 2 is to create simple database for storing students data (Name, Surname and Index no). Task is to be divided among members of the group.
 
 ## Task division
@@ -14,5 +15,6 @@ Post-work for Lesson 2 is to create simple database for storing students data (N
   - [ ] add element to list
   - [ ] remove element from list
 - [ ] DB: sort list by index
+
 Optional
 - [ ] DB: store database in file

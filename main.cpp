@@ -5,29 +5,28 @@ using namespace std;
 void menuShow();
 void menuChoose();
 
-int main() {
-    do {
-    menuShow();
-    } while (true);
+int main() { 
     menuChoose();
 
     return 0;
 }
 
 void menuShow() {
-	    system("cls");
-	    cout << "Program option:" << endl;
-	    cout << "1. Show students list" << endl;
-	    cout << "2. Add new student" << endl;
-	    cout << "3. Remove student" << endl;
-	    cout << "4. Sort students list" << endl;
-	    cout << "5. Exit program" << endl;
+	system("cls");
+	cout << "Program option:" << endl;
+	cout << "1. Show students list" << endl;
+	cout << "2. Add new student" << endl;
+	cout << "3. Remove student" << endl;
+	cout << "4. Sort students list" << endl;
+	cout << "5. Exit program" << endl;
 }
 
 void menuChoose() {
     char option;
 
-    do { 
+    do {
+        cout << "\033[2J\033[1;1H";
+        menuShow();
         cin >> option;
 
         switch (option) {

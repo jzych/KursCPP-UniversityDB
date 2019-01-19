@@ -12,7 +12,6 @@ int main() {
 }
 
 void menuShow() {
-	system("cls");
 	cout << "Program option:" << endl;
 	cout << "1. Show students list" << endl;
 	cout << "2. Add new student" << endl;

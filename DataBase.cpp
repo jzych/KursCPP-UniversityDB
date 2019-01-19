@@ -3,10 +3,6 @@
 
 DataBase::DataBase()
 {
-    std::vector<Student*> dataBase;
+    std::vector<Student> dataBase;
 }
 
-DataBase::~DataBase()
-{
-    dataBase.clear();
-}

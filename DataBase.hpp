@@ -3,7 +3,7 @@
 
 class DataBase
 {
-    std::vector<Student*> dataBase;
+    std::vector<Student> dataBase;
 public:
     DataBase();
     ~DataBase();

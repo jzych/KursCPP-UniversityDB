@@ -1,4 +1,5 @@
 #include <vector>
+#include <iostream>
 #include "Student.hpp"
 
 class DataBase
@@ -7,4 +8,6 @@ class DataBase
 public:
     DataBase();
     ~DataBase();
+
+    void addStudent();
 };

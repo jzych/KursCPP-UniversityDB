@@ -38,3 +38,14 @@ void DataBase::show() {
 
     }
 }
+
+void DataBase::removeStudent(const int32_t & index) {
+    if (dataBase.empty()){
+        std::cout << "Empty database! " << std::endl;
+        return;
+     }
+    for (unsigned int i = 0; i < dataBase.size(); i++){
+        if (index == dataBase[i].studentId)
+            dataBase.erase(dataBase.begin()+ i);
+ }
+}

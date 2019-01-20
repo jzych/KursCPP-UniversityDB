@@ -9,7 +9,8 @@ public:
     DataBase();
     ~DataBase();
     
-    void show();
     void addStudentMenu();
     void addStudentAuto(std::string firstName, std::string lastName, int32_t index_no);
+    void show();
+    void removeStudent(const int32_t & index);
 };

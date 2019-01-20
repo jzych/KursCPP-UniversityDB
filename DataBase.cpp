@@ -29,12 +29,20 @@ void DataBase::addStudentAuto(std::string firstName, std::string lastName, int32
 }
 
 void DataBase::show() {
-    for (auto & student : dataBase)
-    {
+    for (auto & student : dataBase) {
         std::cout << std::setw(10) <<std::left << student.firstName;
         std::cout << std::setw(15) <<std::left << student.lastName;
         std::cout << std::setw(6) <<std::left << student.studentId;
         std::cout << std::endl;
-
     }
+}
+void DataBase::removeStudent(const int32_t & index) {
+    if (dataBase.empty()){
+        std::cout << "Empty database! " << std::endl;
+        return;
+     }
+    for (unsigned int i = 1; i <= dataBase.size(); i++){
+        if (index == dataBase[i].studentId)
+            dataBase.erase(dataBase.begin()+ i);
+ }
 }

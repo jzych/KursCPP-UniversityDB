@@ -1,6 +1,7 @@
 #include "DataBase.hpp"
 #include <vector>
 #include <iomanip>
+#include <algorithm>
 DataBase::DataBase() {
     std::vector<Student> dataBase;
 }
@@ -29,13 +30,11 @@ void DataBase::addStudentAuto(std::string firstName, std::string lastName, int32
 }
 
 void DataBase::show() {
-    for (auto & student : dataBase)
-    {
+    for (auto & student : dataBase) {
         std::cout << std::setw(10) <<std::left << student.firstName;
         std::cout << std::setw(15) <<std::left << student.lastName;
         std::cout << std::setw(6) <<std::left << student.studentId;
         std::cout << std::endl;
-
     }
 }
 
@@ -49,3 +48,15 @@ void DataBase::removeStudent(const int32_t & index) {
             dataBase.erase(dataBase.begin()+ i);
  }
 }
+
+bool lowerThan(const Student & s1, const Student & s2){
+    if (s1.studentId < s2.studentId)
+        return true;
+    else
+        return false;
+ }
+
+void DataBase::sortByIndex(){
+    std::sort(dataBase.begin(), dataBase.end(), lowerThan);
+ }
+

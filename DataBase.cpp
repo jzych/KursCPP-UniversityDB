@@ -39,17 +39,19 @@ void DataBase::show() {
 }
 
 void DataBase::removeStudent(const int32_t & index) {
-    if (dataBase.empty()){
+    if (dataBase.empty()) {
         std::cout << "Empty database! " << std::endl;
         return;
-     }
-    for (unsigned int i = 0; i < dataBase.size(); i++){
-        if (index == dataBase[i].studentId)
+    }
+    for (unsigned int i = 0; i < dataBase.size(); i++) {
+        if (index == dataBase[i].studentId) {
             dataBase.erase(dataBase.begin()+ i);
- }
+            return;
+        }
+    }
 }
 
-bool lowerThan(const Student & s1, const Student & s2){
+bool lowerThan(const Student & s1, const Student & s2) {
     if (s1.studentId < s2.studentId)
         return true;
     else

@@ -8,7 +8,8 @@ class DataBase
 public:
     DataBase();
     ~DataBase();
-
+    
+    void show();
     void addStudentMenu();
     void addStudentAuto(std::string firstName, std::string lastName, int32_t index_no);
 };

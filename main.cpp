@@ -9,6 +9,7 @@ int main() {
     DataBase* db = new DataBase();
     db->addStudentAuto("Jakub", "Zych", 171648);
     db->addStudentMenu();
+    db->show();
     
     return 0;
 }

@@ -31,9 +31,9 @@ void DataBase::addStudentAuto(std::string firstName, std::string lastName, int32
 
 void DataBase::show() {
     for (auto & student : dataBase) {
-        std::cout << std::setw(10) <<std::left << student.firstName;
-        std::cout << std::setw(15) <<std::left << student.lastName;
-        std::cout << std::setw(6) <<std::left << student.studentId;
+        std::cout << std::setw(10) << std::left << student.firstName;
+        std::cout << std::setw(15) << std::left << student.lastName;
+        std::cout << std::setw(6) << std::left << student.studentId;
         std::cout << std::endl;
     }
 }

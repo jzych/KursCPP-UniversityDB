@@ -58,7 +58,7 @@ bool lowerThan(const Student & s1, const Student & s2) {
         return false;
  }
 
-void DataBase::sortByIndex(){
+void DataBase::sortByIndex() {
     std::sort(dataBase.begin(), dataBase.end(), lowerThan);
- }
+}
 

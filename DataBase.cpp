@@ -55,10 +55,7 @@ void DataBase::removeStudent(const int32_t & index) {
 }
 
 bool lowerThan(const Student & s1, const Student & s2) {
-    if (s1.studentId < s2.studentId)
-        return true;
-    else
-        return false;
+    return (s1.studentId < s2.studentId);
  }
 
 void DataBase::sortByIndex() {

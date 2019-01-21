@@ -21,13 +21,14 @@ int main() {
     db->addStudentAuto("Jakub", "Zych", 171648);
     db->addStudentAuto("Jan", "Kowalski", 170032);
     db->addStudentAuto("Janina", "Nowak", 178291);
-
-    // Clear terminal
-    cout << "\033[2J\033[1;1H";
+    db->addStudentAuto("Janko", "Muzykant", 17111);
 
     do {   
         menuShow();
         cin >> option;
+
+        // Clear terminal
+        cout << "\033[2J\033[1;1H";
 
         switch (option) {
             case '1' :
@@ -45,7 +46,8 @@ int main() {
                 break;
             case '4' : 
                 cout << "Sorting student list" << endl;
-                db->show(); 
+                db->sortByIndex(); 
+                db->show();
                 break;
             case '5' : 
                 cout << "Exit" << endl;

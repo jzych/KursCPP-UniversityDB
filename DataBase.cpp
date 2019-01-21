@@ -2,8 +2,11 @@
 #include <vector>
 #include <iomanip>
 #include <algorithm>
+
 DataBase::DataBase() {
-    std::vector<Student> dataBase;
+}
+
+DataBase::~DataBase() {
 }
 
 void DataBase::addStudentMenu() {

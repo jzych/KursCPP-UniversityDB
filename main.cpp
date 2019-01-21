@@ -49,13 +49,12 @@ int main() {
                 break;
             case '5' : 
                 cout << "Exit" << endl;
-                delete &db;
                 break;
             default : 
                 cout << "Unknown option " << option << "!" << endl;
                 break;
         }
-    } while (option != 5);
+    } while (option != '5');
     
     return 0;
 }

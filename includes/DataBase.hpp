@@ -4,7 +4,9 @@
 
 class DataBase
 {
+private:
     std::vector<Student> dataBase;
+
 public:
     DataBase();
     ~DataBase();
